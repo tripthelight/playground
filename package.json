@@ -1,0 +1,26 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "- 개발 놀이터",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webRTCSignalingServer": "node webRTC/SignalingServer/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripthelight/playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripthelight/playground/issues"
+  },
+  "type": "module",
+  "homepage": "https://github.com/tripthelight/playground#readme",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "ws": "^8.18.3"
+  }
+}
