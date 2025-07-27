@@ -22,10 +22,10 @@ document.querySelector('#app').innerHTML = /*html*/ `
 
 const ws = new WebSocket('ws://210.124.202.71:8080');
 
-
-
-
-
+const domChat = document.getElementById('chat');
+const domUserId = document.querySelector('.user-id');
+const domMessageInput = document.getElementById('message');
+const domSendButton = document.getElementById('send');
 
 function addMessage(peerId, message) {
   const div = document.createElement('div');
