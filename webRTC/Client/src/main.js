@@ -33,17 +33,3 @@ function addMessage(peerId, message) {
   domChat.appendChild(div);
   domChat.scrollTop = domChat.scrollHeight;
 };
-
-domSendButton.onclick = () => {
-  const message = domMessageInput.value;
-  if (!message) return;
-  addMessage('You', message);
-
-  Object.values(peers).forEach(peer => {
-    if (peer.dataChannel && peer.dataChannel.readyState === 'open') {
-      peer.dataChannel.send(message);
-    };
-  });
-
-  domMessageInput.value = '';
-};
